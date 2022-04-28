@@ -11,7 +11,7 @@ function App() {
   const sendRequest = async () => {
     await axios({
       method: 'post',
-      url: '/flow/app/server',
+      url: '/app/flow/ip/test/ip_geo',
       data: {
         firstName: 'Fred',
         lastName: 'Flintstone',
@@ -31,6 +31,7 @@ function App() {
       await axios({
       method: 'get',
       url: 'https://loserkeys.tk/app/flow/fe-resource/sl-developer-center/test/1.0.20/umi.css',
+      
     })
   }
   return (
