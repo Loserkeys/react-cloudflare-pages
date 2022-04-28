@@ -27,8 +27,8 @@ function App() {
   }
 
 
-  const getAliyunCss = () = {
-    await axios({
+  const getAliyunCss =async () => {
+      await axios({
       method: 'get',
       url: 'https://loserkeys.tk/flow/app/fe-resource/sl-developer-center/test/1.0.20/umi.css',
     })
