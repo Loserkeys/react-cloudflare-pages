@@ -4,7 +4,7 @@ function App() {
   const getRequest = async () => {
     await axios({
       method: 'get',
-      url: 'https://loserkeys.tk/flow/app/vue/2.5.16/vue.min.js',
+      url: 'https://loserkeys.tk/app/flow/vue/2.5.16/vue.min.js',
     })
   }
 
@@ -30,7 +30,7 @@ function App() {
   const getAliyunCss =async () => {
       await axios({
       method: 'get',
-      url: 'https://loserkeys.tk/flow/app/fe-resource/sl-developer-center/test/1.0.20/umi.css',
+      url: 'https://loserkeys.tk/app/flow/fe-resource/sl-developer-center/test/1.0.20/umi.css',
     })
   }
   return (
