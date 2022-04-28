@@ -11,7 +11,7 @@ function App() {
   const sendRequest = async () => {
     await axios({
       method: 'post',
-      url: '/user/12345',
+      url: '/flow/app/server',
       data: {
         firstName: 'Fred',
         lastName: 'Flintstone',
@@ -26,6 +26,13 @@ function App() {
     })
   }
 
+
+  const getAliyunCss = () = {
+    await axios({
+      method: 'get',
+      url: 'https://loserkeys.tk/flow/app/fe-resource/sl-developer-center/test/1.0.20/umi.css',
+    })
+  }
   return (
     <div className='App'>
       <div>clourdflire 测试demo</div>
@@ -33,6 +40,10 @@ function App() {
       <br />
       <br />
       <button onClick={sendRequest}>提交一些请求</button>
+
+      <br />
+      <br />
+      <button onClick={getAliyunCss}>获取一个 css 资源</button>
     </div>
   )
 }
