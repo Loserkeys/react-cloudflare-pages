@@ -12,7 +12,7 @@ function App() {
       method: 'get',
       url: 'https://loserkeys.tk/app/flow/vue/2.5.16/vue.min.js',
     })
-    setJS(res)
+    console.log(res);
   }
 
   const sendRequest = async () => {
@@ -31,7 +31,7 @@ function App() {
         header_uuid: '321321212-13221321-321321-ewqeq',
       },
     })
-    setIpAddress(data)
+   console.log(data)
   }
 
   const getAliyunCss = async () => {
@@ -39,7 +39,8 @@ function App() {
       method: 'get',
       url: 'https://loserkeys.tk/app/flow/fe-resource/sl-developer-center/test/1.0.20/umi.css',
     })
-    setCss(res)
+    console.log(res);
+
   }
 
   return (
